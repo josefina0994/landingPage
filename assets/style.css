@@ -1,6 +1,7 @@
 :root{
-    --background: #02050e;
-
+    --background: #ffffff;
+    --fuente: #757574;
+    --borde: #dfdfdf;
 }
 
 *{
@@ -9,6 +10,38 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    font-family: ;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+    background-color: var(--background);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 80px;
+    border: 1px solid var(--borde);
+}
+
+.logo{
+    height: 50%;
+}
+
+.navbar, .navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navbar-list{
+    gap: 60px;
+}
+
+.navbar-list a{
+    color: var(--fuente);
+    font-weight: 600;
 }
 

@@ -2,10 +2,9 @@
 
 
 :root{
-    --background: #ffffff;
-    --fuente: #757574;
-    --borde: #dfdfdf;
-}
+    --background: #000000;
+    --fuente: #dfdfdf;
+  }
 
 *{
     margin: 0;
@@ -25,7 +24,6 @@ header{
     justify-content: space-between;
     height: 100px;
     padding: 0 80px;
-    border: 1px solid var(--borde);
 }
 
 .logo{
@@ -45,6 +43,5 @@ header{
 
 .navbar-list a{
     color: var(--fuente);
-    font-weight: 600;
 }
 

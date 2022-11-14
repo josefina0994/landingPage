@@ -15,13 +15,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
+body{
+  background-color: var(--background);
+}
 header{
-    background-color: var(--background);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #666565;
     height: 100px;
     padding: 0 80px;
 }
@@ -45,3 +47,37 @@ header{
     color: var(--fuente);
 }
 
+section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.contenedor{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: #dfdfdf;
+  padding: 3rem;
+}
+
+.datos{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2rem;
+  width: 30rem;
+}
+
+.datos h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+button{
+  border-radius: 1rem;
+  padding: 1rem;
+}

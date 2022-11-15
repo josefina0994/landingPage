@@ -52,14 +52,15 @@ section{
   display: flex;
   justify-content: center;
   margin-top: 100px;
-}
+  }
 
 .contenedor{
   width: 100%;
   max-width: 1200px;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  align-content: center;
+  gap: 3rem;
   color: #dfdfdf;
   padding: 3rem;
 }
@@ -67,9 +68,11 @@ section{
 .datos{
   display: flex;
   flex-direction: column;
+  align-content: center;
   text-align: left;
   gap: 2rem;
   width: 30rem;
+  padding: 1rem;
 }
 
 .datos h1{
@@ -77,7 +80,23 @@ section{
   font-weight: 600;
 }
 
-button{
-  border-radius: 1rem;
-  padding: 1rem;
+.datos p{
+    font-size: 1.2rem;
 }
+
+button{
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  width: 10rem;
+  font-size: 1rem;
+  background-color: #08fdd8;
+
+
+}
+
+.contenedor img{
+    width: 450px;
+    height: 470px;
+    border-radius: 0.5rem;
+    border-radius: 100%;
+  }

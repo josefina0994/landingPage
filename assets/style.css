@@ -2,10 +2,10 @@
 
 
 :root{
-    --background: #E9E9E2;
-    --fuente-oscura: #000; 
-    --fuente-clara: #fff;
-    --fuente-hover: #9b9b93;
+    --clarito: #E9E9E2;
+    --black: #000; 
+    --white: #fff;
+    --gray: #9b9b93;
 
   }
 
@@ -19,12 +19,12 @@
 }
 
 body{
-  background-color: var(--background);
+  background-color: var(--clarito);
 }
 
 header{
     width: 100%;
-    background-color: var(--fuente-oscura);
+    background-color: var(--black);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,11 +37,11 @@ header{
   font-weight: 600;
   font-size: 3rem;
   letter-spacing: 0.5rem;
-  color: var(--fuente-clara);
+  color: var(--white);
   }
 
   header p a{
-    color: var(--fuente-clara);
+    color: var(--white);
     }
 
 
@@ -57,39 +57,49 @@ header{
 }
 
 .navbar-list a{
-    color: var(--fuente-clara);
+    color: var(--white);
+}
+
+/*main*/
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #section-hero{
   background-image: url(./img/skyline.png);
   background-size: cover;
   width: 100%;
-  height: 500px;
   display: flex;
-  justify-content: left;
   margin-top: 80px;
+  padding: 7rem;
   }
 
 
 .hero-info{
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   text-align: left;
   gap: 1rem;
-  width: 30rem;
-  padding: 7rem;
+
 }
 
 .hero-info h1{
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 1rem;
-  color: var(--fuente-clara);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-info p{
-    font-size: 1.3rem;
-    color: var(--fuente-clara);
+    font-size: 1.2rem;
+    color: var(--gray);
 }
 
 .hero-info button{
@@ -98,35 +108,66 @@ header{
   padding: 0.8rem;
   width: 15rem;
   font-size: 0.8rem;
-  border: 2px solid var(--fuente-clara);
+  border: 2px solid var(--white);
   background-color: transparent;
 
 }
 
 .hero-info button a{
-  color: var(--fuente-clara);
+  color: var(--white);
   font-weight: 600;
   letter-spacing: 0.3rem;
 }
 
 .hero-info button a:visited {
-  color: var(--fuente-clara);
+  color: var(--white);
 
 }
 
 
 #section-info{
-  max-width: 1200px;
+  width: 80%;
+  max-width: 850px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   gap: 2rem;
-  padding: 5rem;
-  margin: 0 auto;
+  padding: 5rem 0;
 }
 
 #section-info p{
   font-size: 1.5rem;
   font-weight: lighter;
+}
+
+#section-card{
+  background-color: var(--white);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 5rem;
+}
+
+.container-card{
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.card{
+  width: 300px;
+  height: 300px;
+  background-color: var(--clarito);
+  border-radius: 0.5rem;
+}
+
+#section-contact{
+  width: 100%;
+  background-color: var(--black);
 }

@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <title>Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaquerys.css" />
+
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/22c08125c6.js" crossorigin="anonymous"></script>
+
+    <title>Constaza Fotografía</title>
   </head>
 
   <body>
     <header>
-      <p><a href="index.html">CF</a></p>
+      <p class="logo"><a href="index.html">CF</a></p>
       <nav class="navbar">
         <ul class="navbar-list">
           <li><a href="#">HOME</a></li>
@@ -19,38 +24,98 @@
           <li><a href="#">CONTACTO</a></li>
         </ul>
       </nav>
+      <img src="./assets/img/bag.png" alt="carrito">
     </header>
 <main>
 
  <section id="section-hero">
 <div class="hero-info">
-  <h1>CONSTANZA <span>FOTOGRAFIA</span></h1>
-  <p>Fotografías con historia</p>
-  <button><a href="#">GALERÍA</a></button>
+  <h1>CONSTANZA <span>FOTOGRAFÍA</span></h1>
+  <h2>Fotografías con historia</h2>
+ </div>
 
+ <div class="hero-description">
+ <p>Queremos dar acceso a decorar con arte a todas las personas del mundo. Atrás quedaron los tiempos en que esto era solo para unos pocos!
+  Haga un recorrido por nuestra galería en línea, seleccione sus obras de arte favoritas y adáptelas con precisión a su espacio único.</p>
+ <button><a href="#">GALERÍA</a></button>
 </div>
 
     </section>
     <section id="section-info">
-      <h2>SOBRE MÍ</h2>
+      <h3>SOBRE MÍ</h3>
       <p>La frase "cuando la afición se convierte en pasión", describe perfectamente lo que es mi vida, pues la música y la fotografía comenzaron siendo siendo precisamente eso, una afición. Afortunadamente, hoy ambas forman parte de mi día a día, en un ámbito más profesional, como una manera de expresión pasional de sentimiento artístico.</p>
+      <button><a href="#">VER MÁS</a></button>
+
     </section>
 
     <section id="section-card">
+      <h3>GALERÍA</h3>
       <div class="container-card">
         <div class="card"></div>
         <div class="card"></div>
         <div class="card"></div>
       </div>
+      <button><a href="#">VER MÁS</a></button>
     </section>
 
-    <section id="section-contact">
 
+
+    <section id="section-location">
+      <h3>UBICACIÓN</h3>
+      <div class="container-location">
+      <div class="info-location">
+ 
+        <div>
+         <i class="fa-solid fa-location-dot"></i>
+          <p>Av. Juramento 1332, C.A.B.A</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <p>+54 9 1123568965</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p>contacto@constanzafotografia.com</p>
+        </div>
+      </div>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.9165247881824!2d-58.4480239842542!3d-34.55566886246533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb434a9d06d83%3A0x325c9c9cb78bbe0b!2sAv.%20Juramento%201332%2C%20C1428DMP%20CABA!5e0!3m2!1ses!2sar!4v1668693852334!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <section id="section-contact">
+        <h3>CONTACTO</h3>
+      <div class="form-contact">   
+  
+        <form>
+          <label for="name">Nombre y Apellido</label>
+          <input type="text" id="name" placeholder="Juan Gonzalez">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" placeholder="email@gmail.com">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" placeholder="Asunto">
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje..."></textarea>
+          <button>ENVIAR</button>
+        </form>
+      </div>
+      </section>
+    </div>
     </section>
+     
   </main>
 
-  <footer>
+  <footer class="footer">
 
+    <div class="container-footer">
+    <p class="logo"><a href="index.html">CF</a></p>
+    <div class="social-media">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+    </div>
+  </div>
+  <p class="copyright">Creado por Jey Diseño web | 2022</p>
   </footer>
   </body>
 </html>

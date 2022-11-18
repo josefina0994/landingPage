@@ -24,8 +24,7 @@ body{
 
 h3{
   font-size: 1.5rem;
-  padding: 1rem;
-}
+  }
 
 /*BOTONES*/
 button{
@@ -84,6 +83,12 @@ header{
 .navbar-list a{
     color: var(--white);
     font-size: 0.9rem;
+    transition: all 0.5s;
+}
+
+.navbar-list a:hover{
+  color: var(--gray);
+  transform: scale(1.5);
 }
 
 /*main*/
@@ -123,7 +128,7 @@ main{
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
-    display: flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -157,13 +162,13 @@ main{
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   padding: 5rem 0;
 }
 
 #section-info p{
   font-size: 1.1rem;
-  font-weight: lighter;
+
 }
 
 #section-info button{
@@ -186,7 +191,7 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   padding: 5rem 0;
 
 }
@@ -202,7 +207,7 @@ main{
 }
 
 .card{
-  width: 300px;
+  width: 380px;
   height: 300px;
   background-color: var(--clarito);
   border-radius: 0.5rem;
@@ -248,7 +253,7 @@ main{
   flex-direction: column;
   justify-content: center;
   color: var(--black);
-  gap: 2rem;
+  gap: 3.5rem;
   padding: 1rem 2rem;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -262,6 +267,7 @@ main{
 iframe{
   border-radius: 0.5rem;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  
 }
 
 
@@ -275,7 +281,7 @@ iframe{
   flex-wrap: wrap;
   padding: 5rem 1rem;
   color: var(--white);
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .form-contact{
@@ -296,11 +302,12 @@ iframe{
 
 form label{
   font-size: 0.8rem;
-}
+ }
 
 form input, form textarea{
   padding: 0.3rem;
   font-size: 0.8rem;
+  border-radius: 0.2rem;
 }
 
 form button{
@@ -338,7 +345,7 @@ form button{
 .social-media{
   display: flex;
   gap: 1.5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 
 }
 

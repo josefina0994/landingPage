@@ -261,6 +261,12 @@ main {
   background-color: var(--clarito);
   border-radius: 0.5rem;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+
+}
+
+.card:hover{
+  transform: scale(1.1);
 }
 
 #section-card button {
